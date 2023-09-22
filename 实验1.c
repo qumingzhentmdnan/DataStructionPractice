@@ -145,7 +145,7 @@ void GetMaxAndAverage(emp* head) {
 		printf("文件打开失败");
 		return;
 	}
-	fprintf(file, "\n平均分：%f 最高分：%f\n", average, max);
+	fprintf(file, "平均分：%f 最高分：%f\n", average, max);
 	fclose(file);
 }
 
@@ -156,7 +156,7 @@ void FilterByScore(emp* head) {
 	printf("请依次输入最小值和最大值:\n");
 	scanf("%lf%lf", &min, &max);
 
-	FILE* file = fopen("D:\\shuju4.txt", "w");
+	FILE* file = fopen("D:\\shuju6.txt", "w");
 	if (file == NULL) {
 		printf("文件创建失败");
 		return;
